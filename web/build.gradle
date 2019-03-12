@@ -1,0 +1,22 @@
+ext.moduleName = 'com.marcobehler.web'
+
+/*apply plugin: 'application'
+mainClassName = "$moduleName/com.marcobehler.web.TradingApp"*/
+
+dependencies {
+    compile project(":service")    
+}
+
+/*
+run {
+    inputs.property("moduleName", moduleName)
+    doFirst {
+        jvmArgs = [
+                '--module-path', classpath.asPath,
+                '--module', mainClassName
+        ]
+        classpath = files()
+    }
+}
+
+*/
